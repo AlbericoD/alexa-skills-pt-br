@@ -26,7 +26,7 @@ provider:
 
 # you can overwrite defaults here
 #  stage: dev
-  region: sa-east-1
+  region: us-east-1
 
 # you can add statements to the Lambda function's IAM Role here
 #  iamRoleStatements:
@@ -74,7 +74,7 @@ functions:
 #      - schedule: rate(10 minutes)
 #      - sns: greeter-topic
 #      - stream: arn:aws:dynamodb:region:XXXXXX:table/foo/stream/1970-01-01T00:00:00.000
-        - alexaSkill: xxxxxxx
+        - alexaSkill: amzn1.ask.skill.f484368c-79b4-4df0-9bda-56c27119d677
 #      - alexaSmartHome: amzn1.ask.skill.xx-xx-xx-xx
 #      - iot:
 #          sql: "SELECT * FROM 'some_topic'"
