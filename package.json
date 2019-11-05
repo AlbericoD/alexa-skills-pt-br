@@ -19,6 +19,7 @@
   "homepage": "https://github.com/AlbericoD/alexa-skills-pt-br#readme",
   "dependencies": {
     "ask-sdk-core": "^2.7.0",
-    "ask-sdk-model": "^1.22.0"
+    "ask-sdk-model": "^1.22.0",
+    "i18next": "^19.0.0"
   }
 }

@@ -1,13 +1,15 @@
 const Alexa = require('ask-sdk-core');
+// const i18n = require('i18next');
 const { BEM_VINDO, FATOS, ERRO } = require('./falas');
+const L = console.log;
 
 const LaunchRequestHandler = {
   canHandle(handlerInput) {
+  
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput) {
-
-
+    console.log(BEM_VINDO);
     return handlerInput.responseBuilder
       .speak(BEM_VINDO)
       .reprompt(BEM_VINDO)
@@ -44,6 +46,8 @@ const ErrorHandler = {
       .getResponse();
   },
 };
+
+// const Internacionalizacao = () =>
 
 module.exports.hello = Alexa.SkillBuilders.custom()
   .addRequestHandlers(
